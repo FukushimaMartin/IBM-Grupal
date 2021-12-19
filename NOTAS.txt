@@ -1,0 +1,44 @@
+Para aportar cambios
+
+1) git clone {URL}     <--Si ya clonaste anteriormente, presta atención al punto 11)
+2) git branch rama-{NAME}
+3) git checkout rama-{NAME}
+
+Ahora estamos en nuestra rama
+Subimos cambios a la rama
+4) git add .            <-- El punto indica que suba todo lo que se modificó.
+5) git commit -m "subo cambios bla bla"
+6) git push
+Puede que la primera vez tire un error y tengas que hacer estamos
+6-b) git push --set-upstream origin rama-{NAME}
+
+Si en este punto hacemos
+    git log --oneline
+podemos ver el log de commit realizados, y se puede visualizar que el ultimo commit solo esta en nuestra rama
+
+
+Ahora tenemos que movernos a la rama master/main
+7) git checkout main
+
+Juntamos los cambios
+8) git merge rama-{NAME}
+9) git push
+
+Volvemos a nuestra rama
+10) git checkout rama-{NAME}
+
+
+util: si hacemos "git status" antes de cada comando, podemos ver como cambian los estados
+suele darte un consejo del paso que deberías seguir, por ej despues de un "add" te recomienda hacer "commit"
+
+
+Luego de clonar, supongamos que otra persona hace cambios
+Para mantenernos sincronizados con la rama master/main debemos hacer:
+11) git checkout main
+12) git pull
+13) git checkout rama-{NAME}
+14) git merge main rama-{NAME}
+15) git push
+
+
+

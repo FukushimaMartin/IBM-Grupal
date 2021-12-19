@@ -1,0 +1,87 @@
+ expo init
+(si dice que hay una nueva version de expo cli)
+yarn global add expo-cli
+
+ - React Navigation
+@react-navigation/native@~5.1.5
+-- Actualizacion --
+yarn add @react-navigation/native@~5.4.0
+
+
+expo install react-native-gesture-handler@~1.10.2
+expo install react-native-reanimated@~2.2.0
+expo install react-native-screens@~3.4.0
+expo install react-native-safe-area-context@~3.2.0
+expo install @react-native-community/masked-view@~0.1.10
+ -- Actualizacion --
+yarn add @react-navigation/drawer@~5.10.0
+
+
+yarn add @react-navigation/stack@~5.2.10
+ -- Actualizacion --
+yarn add @react-navigation/stack@~5.10.0
+
+
+ - Tab navigation
+yarn add @react-navigation/bottom-tabs@~5.2.6
+ -- Actualizacion --
+yarn add @react-navigation/bottom-tabs@~5.10.0
+
+
+- React Native Elements
+yarn add react-native-elements@~1.2.7
+
+
+- Firebase
+yarn add firebase@~8.2.3
+
+- Scroll View
+yarn add react-native-keyboard-aware-scroll-view@~0.9.1
+
+- Lodash
+yarn add lodash@~4.17.21
+
+- Easy Toast
+yarn add react-native-easy-toast@~1.2.0
+
+- Expo permission
+yarn add expo-permissions@~12.1.1
+- Image Picker
+yarn add expo-image-picker@~10.2.2
+- Expo camera
+yarn add expo-camera@~12.0.3
+
+- Google Maps
+yarn add react-google-maps@~9.4.5
+
+- Maps de React yarn
+yarn add react-native-maps@~0.27.1
+- Expo Location
+yarn add expo-location@~8.1.0
+
+
+expo-camera - expected version: ~11.2.2 - actual version installed: 12.0.3
+ - expo-location - expected version: ~12.1.2 - actual version installed: 13.0.4
+ - firebase - expected version: 8.2.3 - actual version installed: 8.2.10
+ - react-native-maps - expected version: 0.28.0 - actual version installed: 0.27.1
+ Animated: `useNativeDriver` was not specified. This is a required option and must be explicitly set to `true` or `false`
+
+
+
+Para crear el apk de la app
+    expo build:android
+Para crear la huella de la api
+    expo fetch:android:hashes
+
+
+Open maps
+yarn add react-native-open-maps@~0.3.5
+
+FireSQL
+yarn add firesql@~2.0.2
+
+DOTENV
+yarn add dotenv
+
+View Slider
+yarn add react-native-view-slider 
